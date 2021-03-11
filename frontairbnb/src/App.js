@@ -23,7 +23,6 @@ function App() {
               De:
               <li>Iangolana</li>
             </ol>
-            <p>Ne tiens pas compte de se modification c'est juste fait pour deboguer le push vers github</p>
           </div>
         </div>
       </div>
