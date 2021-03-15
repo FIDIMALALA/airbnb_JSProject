@@ -29,17 +29,17 @@
             }
         }
 
-        private function delete(){
+        public function delete(){
             $this->db->delete($this->get_db_table(), array(
-                $this->get_db_table_pk() => $this->{$this->get_db_table_pk()};
+                $this->get_db_table_pk() => $this->{$this->get_db_table_pk()}
             ));
             return $this->{$this->get_db_table_pk()};
         }
 
-        private function getData(){
-            return $this->db->select(*)
+        public function getData(){
+            return $this->db->select('*')
                 ->from($this->get_db_table())
                 ->get()
-                ->result()
+                ->result();
         }
     }
