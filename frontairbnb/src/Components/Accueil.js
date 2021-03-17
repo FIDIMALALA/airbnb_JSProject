@@ -15,8 +15,8 @@ export class Accueil extends Component {
                 <p>Salut les amis, bienvenu sur notre plateforme de developpement de AirBnB</p>
                 <p>Bon developpement ;)</p>
                 <ol>
-                  <li>Sidonie</li>
-                  <li>Lionel</li>
+                  <li><i className="material-icons">add</i>Sidonie</li>
+                  <li><i className="material-icons">airline_seat_flat</i>Lionel</li>
                   <li>Hery</li>
                   <li>Thierry</li>
                   De:
