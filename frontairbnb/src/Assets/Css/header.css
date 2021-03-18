@@ -7,9 +7,20 @@
     min-height: 80px;
     color: #000!important;
   }
+  .drl-header-banner{
+      position: relative;
+  }
+  .drl-header-banner .drl-menu{
+    background-color: #000!important;
+    color: #fff!important;
+    padding: 0px 80px 40px 80px;
+  }
   .drl-menu-logo{
     padding-top: 10px;
     color: #FF385C!important;
+  }
+  .drl-header-banner .drl-menu-logo{
+    color: #fff!important;
   }
   .drl-nav-listes{
     display: flex;
@@ -27,8 +38,14 @@
     padding: 0!important;
     font-size: 17px!important;
   }
+  .drl-header-banner .drl-nav-menu-liste a{
+    color: #fff!important;
+  }
   .drl-nav-menu-liste a:hover{
     background-color: initial!important;
+  }
+  .drl-nav-item{
+      cursor: pointer;
   }
   .drl-nav-item div{
       display: flex;
@@ -46,12 +63,18 @@
     background-color: #000;
     margin-top: 8px;
   }
+  .drl-header-banner .drl-nav-item.drl-active span{
+    background-color: #fff;
+  }
   .drl-nav-item:hover span{
     width: 10%;
     height: 2px;
     background-color: #000;
     margin-top: 8px;
     transition: width 0.3s;
+  }
+  .drl-header-banner .drl-nav-item:hover span{
+    background-color: #fff;
   }
   .drl-menu-search{
     display: flex!important;
@@ -91,6 +114,9 @@
     color: #464646!important;
     font-weight: 500;
     margin-right: 20px;
+  }
+  .drl-header-banner .drl-menu-right-item a {
+    color: #fff!important;
   }
   .drl-btn-user{
     display: flex!important;
@@ -164,12 +190,28 @@
     display: flex;
     justify-content: space-between;
     border-right: none;
+    padding-right: 10px;
   }
   .item-all-container .item-voyageurs-search .drl-last-list{
-    padding-left: 60px;
-    padding-right: 10px;
     display: flex;
     justify-content: space-between;
+    padding: 5px 15px;
+    align-items: center;
+    border-radius: 25px;
+    background-color: #FF385C;
+    color: #fff;
+    margin-left: 30px;
+  }
+
+  .item-voyageurs-search .drl-last-list .drl-last-list-icon{
+    margin-top: 7px;
+    margin-right: 5px;
+  }
+  .item-voyageurs-search .drl-last-list .drl-last-list-icon i{
+    font-size: 20px;
+  }
+  .item-voyageurs-search .drl-last-list .drl-last-list-texte{
+    font-size: 17px;
   }
   .item-all-container input{
     height: auto!important;
@@ -202,7 +244,84 @@
     background-color: transparent;
     display: flex;
   }
+/*************fin***************************/
+/*************style adresse content**********/
+.adresse-content{
+    position: absolute;
+    width: 400px;
+    background-color: #fff;
+    padding: 20px 0;
+    left: 0;
+    margin-top: 25px;
+    border-radius: 28px;
   
+}    
+.adresse-content .adresse-content-list{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+}
+.adresse-content .adresse-content-list:hover{
+    background-color: #EBEBEB;
+    transition: 0.3s;
+}
+.adresse-content .adresse-content-list img{
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.adresse-content h6{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 0 20px 20px;
+}
+/*************style voyageurs content**********/
+.item-voyageurs-search{
+    position: relative;
+}
+.voyageurs-content{
+    position: absolute;
+    width: 394px;
+    background-color: #fff;
+    right: 0px;
+    margin-top: 60px;
+    border-radius: 28px;
+    padding: 20px 30px;
+}
+.voyageurs-content .voyageurs-content-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 15px 0;
+   
+}
+/***************header bannier ***************/
+.infocovid{
+    background-color: #222222;
+    padding: 17px 80px;
+    text-align: center;
+}    
+.infocovid a {
+    font-size: 14px!important;
+    color: #a3a3a3!important;
+    text-decoration: underline;
+}
+.drl-header-banner{
+    text-align: center;
+}
+.drl-header-banner .img-intro{
+    margin: 0 32px;
+}
+.drl-header-banner .img-intro img{
+    width: 100%;
+    max-height: 400px;
+}
+.header-slogan {
+    padding: 20px 0 32px;
+}
 #text-slogan {
     color: white;
     background-style: white;
@@ -210,4 +329,9 @@
     font-weight: 400;
     letter-spacing: -0.02em;
     line-height: 36px;
+}
+.search-banner {
+    position: absolute;
+    margin-top: -35px;
+    left: 20%
 }
