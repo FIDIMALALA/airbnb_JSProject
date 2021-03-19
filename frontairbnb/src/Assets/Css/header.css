@@ -1,3 +1,327 @@
+.drl-menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff!important;
+    padding: 0px 80px 20px 80px;
+    align-items: center;
+    min-height: 80px;
+    color: #000!important;
+  }
+  .drl-header-banner{
+      position: relative;
+  }
+  .drl-header-banner .drl-menu{
+    background-color: #000!important;
+    color: #fff!important;
+    padding: 0px 80px 40px 80px;
+  }
+  .drl-menu-logo{
+    padding-top: 10px;
+    color: #FF385C!important;
+  }
+  .drl-header-banner .drl-menu-logo{
+    color: #fff!important;
+  }
+  .drl-nav-listes{
+    display: flex;
+    justify-content: center;
+  }
+  .drl-nav-menu-liste{
+    padding-top:10px ;
+  }
+  .drl-nav-menu-liste .drl-nav-item{
+    padding: 0 10px!important;
+    font-size: 17px!important;
+  }
+  .drl-nav-menu-liste a{
+    color: #000!important;
+    padding: 0!important;
+    font-size: 17px!important;
+  }
+  .drl-header-banner .drl-nav-menu-liste a{
+    color: #fff!important;
+  }
+  .drl-nav-menu-liste a:hover{
+    background-color: initial!important;
+  }
+  .drl-nav-item{
+      cursor: pointer;
+  }
+  .drl-nav-item div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  .drl-nav-item span{
+    width: 0;
+    display: block;
+  }
+  .drl-nav-item.drl-active span{
+    width: 15%;
+    height: 2px;
+    background-color: #000;
+    margin-top: 8px;
+  }
+  .drl-header-banner .drl-nav-item.drl-active span{
+    background-color: #fff;
+  }
+  .drl-nav-item:hover span{
+    width: 10%;
+    height: 2px;
+    background-color: #000;
+    margin-top: 8px;
+    transition: width 0.3s;
+  }
+  .drl-header-banner .drl-nav-item:hover span{
+    background-color: #fff;
+  }
+  .drl-menu-search{
+    display: flex!important;
+    color: #464646!important;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid transparent !important;
+    border-radius: 25px !important;
+    padding: 25px 7px 25px 30px!important;
+    background-color: #fff!important;
+    text-transform: inherit!important;
+    font-weight: 500;
+    font-size: 15px!important;
+    width: 100%;
+  }
+  .drl-search-text{
+    letter-spacing: 0;
+  }
+  .drl-search-icon{
+    margin-left: 0;
+  }
+  .drl-search-icon i{
+    background-color: #FF385C;
+    border-radius: 50%;
+    color : #fff!important;
+    height: 33px!important;
+    line-height: 34px!important;
+    padding: 0 8px 0 10px!important;
+    font-size: 15px!important;
+    
+  }
+  .drl-menu-right-item{
+       display: flex;
+      align-items: center;
+  }
+  .drl-menu-right-item a {
+    color: #464646!important;
+    font-weight: 500;
+    margin-right: 20px;
+  }
+  .drl-header-banner .drl-menu-right-item a {
+    color: #fff!important;
+  }
+  .drl-btn-user{
+    display: flex!important;
+    align-items: center;
+    border-radius: 21px !important;
+    height: 42px !important;
+    padding: 5px 5px 5px 12px!important;
+    background-color: #fff!important;
+    color: #333!important;
+    border: 1px solid transparent !important;
+  }
+  .drl-btn-user i{
+    font-size: 35px!important;
+    opacity: 0.8;
+  }
+  .drl-btn-user .drl-first{
+    font-size: 18px!important;
+    font-weight: 600;
+    padding-right: 10px;
+  }
+  .item-all-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0;
+    background-color: #F7F7F7;
+    border: 1px solid transparent;
+    border-radius: 30px;
+  }
+  .drl-herbgmt-liste{
+   cursor: pointer;
+   padding: 15px 30px ; 
+   position: relative;
+   font-size: 12px;
+   font-weight: 700;
+  }
+  .drl-herbgmt-liste::after{
+    content: '';
+    position: absolute;
+    height: 22px;
+    width: 1px;
+    background-color: #A0A0A0;
+    top:20px;
+    left: -5px;
+    z-index: 3;
+  }
+  .drl-herbgmt-liste.drl-active::after{
+    display: none;
+  }
+  .drl-herbgmt-liste.drl-active{
+    background-color: #fff; 
+    height: 100%;
+    border-radius: 30px;
+    z-index: 5;
+    box-shadow: 5px 1px 5px #A0A0A0;
+   }
+   .drl-herbgmt-liste:hover{
+    background-color: #EBEBEB; 
+    height: 100%;
+    border-radius: 30px;
+    z-index: 5;
+    transition: background-color 0.2s;
+   }
+   .drl-herbgmt-liste.drl-active:hover{
+    background-color: #fff; 
+  }
+   .drl-herbgmt-liste:hover::after{
+    display: none;
+   }
+  .item-all-container .item-voyageurs-search{
+    display: flex;
+    justify-content: space-between;
+    border-right: none;
+    padding-right: 10px;
+  }
+  .item-all-container .item-voyageurs-search .drl-last-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    align-items: center;
+    border-radius: 25px;
+    background-color: #FF385C;
+    color: #fff;
+    margin-left: 30px;
+  }
+
+  .item-voyageurs-search .drl-last-list .drl-last-list-icon{
+    margin-top: 7px;
+    margin-right: 5px;
+  }
+  .item-voyageurs-search .drl-last-list .drl-last-list-icon i{
+    font-size: 20px;
+  }
+  .item-voyageurs-search .drl-last-list .drl-last-list-texte{
+    font-size: 17px;
+  }
+  .item-all-container input{
+    height: auto!important;
+    margin: 0!important;
+    border-bottom: none!important;
+    font-size: 15px!important;
+    color: #A0A0A0!important;
+    width: auto!important;
+  }
+  .item-all-container input[type=text]:not(.browser-default):focus:not([readonly]){
+    box-shadow: none;
+  }
+  .item-all-container .text-input{
+   color: #A0A0A0;
+   font-size: 15px;
+   font-weight: 400;
+  }
+  .item-arrivee-depart .drl-item-title {
+    display: flex;
+    justify-content: first baseline;
+  }
+  .item-arrivee-depart .drl-item-title div{
+    width: 50%;
+  }
+  /********** style datepiker *******************/
+  .item-arrivee-depart .DateInput {
+    background: transparent;
+  }
+  .item-arrivee-depart .DateRangePickerInput {
+    background-color: transparent;
+    display: flex;
+  }
+/*************fin***************************/
+/*************style adresse content**********/
+.adresse-content{
+    position: absolute;
+    width: 400px;
+    background-color: #fff;
+    padding: 20px 0;
+    left: 0;
+    margin-top: 25px;
+    border-radius: 28px;
+  
+}    
+.adresse-content .adresse-content-list{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+}
+.adresse-content .adresse-content-list:hover{
+    background-color: #EBEBEB;
+    transition: 0.3s;
+}
+.adresse-content .adresse-content-list img{
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.adresse-content h6{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 0 20px 20px;
+}
+/*************style voyageurs content**********/
+.item-voyageurs-search{
+    position: relative;
+}
+.voyageurs-content{
+    position: absolute;
+    width: 394px;
+    background-color: #fff;
+    right: 0px;
+    margin-top: 60px;
+    border-radius: 28px;
+    padding: 20px 30px;
+}
+.voyageurs-content .voyageurs-content-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 15px 0;
+   
+}
+/***************header bannier ***************/
+.infocovid{
+    background-color: #222222;
+    padding: 17px 80px;
+    text-align: center;
+}    
+.infocovid a {
+    font-size: 14px!important;
+    color: #a3a3a3!important;
+    text-decoration: underline;
+}
+.drl-header-banner{
+    text-align: center;
+}
+.drl-header-banner .img-intro{
+    margin: 0 32px;
+}
+.drl-header-banner .img-intro img{
+    width: 100%;
+    max-height: 400px;
+}
+.header-slogan {
+    padding: 20px 0 32px;
+}
 #text-slogan {
     color: white;
     background-style: white;
@@ -5,4 +329,9 @@
     font-weight: 400;
     letter-spacing: -0.02em;
     line-height: 36px;
+}
+.search-banner {
+    position: absolute;
+    margin-top: -35px;
+    left: 20%
 }
