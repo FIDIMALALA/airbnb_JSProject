@@ -3,7 +3,7 @@ import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 import {DateRangePicker} from 'react-dates';
 
-export class Menu extends Component {
+export class Calandar extends Component {
     
   constructor(){
       super();
@@ -35,3 +35,5 @@ export class Menu extends Component {
     )
   }
 }
+
+export default Calandar
