@@ -1,10 +1,7 @@
 import React, { Component} from 'react';
-import 'react-dates/initialize';
-import 'react-dates/lib/css/_datepicker.css';
-import {DateRangePicker} from 'react-dates';
 import ImageMap from '../Assets/Images/map.jpg';
-import ImageHeader from '../Assets/Images/imgbghead.webp'
-import MenuAcceuil from './MenuAcceuil'
+import ImageHeader from '../Assets/Images/imgbghead.webp';
+import MenuAcceuil from './MenuAcceuil';
 import '../Assets/Css/header.css'
 
 export class Menu extends Component {
@@ -103,28 +100,6 @@ export class Menu extends Component {
             </div>
         )
     }
-    clandra(){
-    
-    return(
-        <div className="calandra-picker" >
-        <DateRangePicker 
-            startDate={this.state.startDate}
-            startDateId ="date_arrivee" 
-            endDate={this.state.endDate}
-            endDateId ="date_depart"
-            onDatesChange={({startDate, endDate}) => this.setState({startDate, endDate}) }
-            focusedInput = {this.state.focusedInput}
-            onFocusChange= {focusedInput => this.setState({focusedInput})}
-            displayFormat="dd MM"
-            startDatePlaceholderText = "Quand?"
-            endDatePlaceholderText = "Quand?"
-            customArrowIcon= " "
-            noBorder = {true}
-            readOnly = {true}
-        />
-        </div>
-    )
-    }
    
     searchMenu(){
     return(
@@ -150,7 +125,7 @@ export class Menu extends Component {
                 <div id="drl_arrivee">Arrivée</div> 
                 <div id="drl_depart">Départ</div> 
                 </div>
-                <div className="drl-item-content"> {this.clandra()} </div>
+                <div className="drl-item-content">  </div>
             </div>
             <div ref={this.toggleContainer} className="item-voyageurs-search drl-herbgmt-liste">
                 <div onClick={this.onClickHandler}>
