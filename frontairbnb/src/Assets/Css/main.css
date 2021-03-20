@@ -1,0 +1,108 @@
+
+/**********style logement****************/
+main.drl-container{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+main .main-content-title{
+  font-size: 35px;
+  font-weight: 700;
+}
+main .logement{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+main .logement .logement-items{
+  width: 25%;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.logement .logement-items img{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.logement .logement-items .logement-item-title{
+  font-size: 19px;
+  color: #000;
+  font-weight: 600;
+  margin-top: 5px;
+}
+/**********style Univers****************/
+.univers {
+  position: relative;
+  max-height: 400px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 45px auto;
+}
+.univers .univer-image{
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: -40px;
+
+}
+.univers .univer-description{
+  position: absolute;
+  left: 8%;
+  top: 0;
+  width: 400px;
+  color: #fff;
+}
+.univer-description .univer-description-title{
+  font-weight: 600;
+  font-size: 3.3em;
+  margin-top: 30px;
+}
+.univer-description .univer-description-texte{
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+.univer-description .univer-description-bnt .btn{
+  background-color: #fff;
+  border-radius: 10px;
+  color: #222;
+  font-weight: 600;
+  height: 50px;
+  line-height: 50px;
+}
+
+/************** style decouverte ****************/
+.decouverte {
+  margin-top: 60px;
+}
+.decouverte .main-content-title{
+  margin-bottom: 0;
+}
+.decouverte-description {
+  color: #222;
+  font-size: 27px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.decouverte-content-items{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+.decouverte-item{
+  width: 33.33%;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.decouverte-item-image{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.decouverte-item-title{
+  font-size: 20px;
+  color: #000;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.decouverte-item-texte{
+  color: #222;
+}

@@ -5,28 +5,29 @@
 
         public function __construct(){
             parent::__construct();
-            $this->load->database();
+            // $this->load->database();
         }
 
-        private function insert(){
-            $this->db->insert($this->get_db_table(), $this);
+        private function insert($data){
+            $this->db->insert($this->get_db_table(), $data);
             $this->{$this->get_db_table_pk()} = $this->db->insert_id();
             return $this->{$this->get_db_table_pk()};
         }
 
-        private function update(){
-            $this->db->update($this->get_db_table(), $this, array(
+        private function update($data){
+            $this->db->update($this->get_db_table(), $data, array(
                 $this->get_db_table_pk() => $this->{$this->get_db_table_pk()}
             ));
             return $this->{$this->get_db_table_pk()};
         }
 
-        private function save(){
-            if (isset($this->{get_db_table_pk()})) {
-                $id = $this->update();
+        public function save($data){
+            if (isset($this->{$this->get_db_table_pk()})) {
+                $id = $this->update($data);
             } else {
-                $id = $this->insert();
+                $id = $this->insert($data);
             }
+            return $id;
         }
 
         public function delete(){

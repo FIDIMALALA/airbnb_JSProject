@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import imageCard from '../Assets/Images/imageHome.jpg';
-import Header from './Header'
+import Header from './Header';
+import Main from './Main';
+import Footer from './Footer'
 
 export class Accueil extends Component {
     render() {
         return (
           <div>
             <Header />
+            <Main />
+            <Footer />
           </div>
         )
     }

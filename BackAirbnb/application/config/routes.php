@@ -53,3 +53,5 @@ $route['default_controller'] = 'Home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['host/getHost'] = 'host/getData';
+$route['host/addHost'] = 'host/addHost';
+$route['host/login'] = 'host/login';
