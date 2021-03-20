@@ -5,7 +5,6 @@ body{
     display: flex;
     justify-content: space-between;
     background-color: #fff!important;
-    padding: 0px 80px 20px 80px;
     align-items: center;
     min-height: 80px;
     color: #000!important;
@@ -112,6 +111,7 @@ body{
   
   .item-all-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
     padding: 0;
@@ -122,14 +122,14 @@ body{
   }
   .drl-herbgmt-liste{
    cursor: pointer;
-   padding: 13px 30px ; 
+   padding: 13px 5% ; 
    position: relative;
    font-size: 12px;
    font-weight: 700;
    text-align: left;
   }
   .item-adress.drl-herbgmt-liste{
-    padding-right: 50px;
+    padding-right: 5%;
   }
   .drl-herbgmt-liste.item-arrivee-depart{
     padding-right: 0;
@@ -361,7 +361,8 @@ body{
 .search-banner {
     position: absolute;
     margin-top: -35px;
-    left: 20%
+    left: 18%;
+    right: 18%;
 }
 /***************style userMenu***********/
 .drl-menu-right-item{
@@ -512,3 +513,4 @@ padding-right: 10px;
   background-color: #F7F7F7;
   transition: 0.3s;
 }
+

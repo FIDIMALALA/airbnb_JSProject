@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
 import facebook from '../Assets/Images/facebook.png';
 import twitter from '../Assets/Images/twitter.jpg';
 import instagram from '../Assets/Images/instagram.png';
-=======
 import {Link} from 'react-router-dom';
->>>>>>> f807792bdfeb2befd8007d87bc8dde3769e568cb
+
 
 export class Footer extends Component {
     render() {
@@ -70,10 +68,10 @@ export class Footer extends Component {
                   </div>
                   <div className="footer-end-other col s6">
                     <ul>
-                      <li> <a href="#!"> Confidentialité </a> </li>
-                      <li> <a href="#!"> Conditions générales </a> </li>
-                      <li> <a href="#!"> Plan du site </a> </li>
-                      <li> <a href="#!"> Fonctionnement du site </a> </li>
+                      <li> <a href="#!"> . Confidentialité </a> </li>
+                      <li> <a href="#!"> . Conditions générales </a> </li>
+                      <li> <a href="#!"> . Plan du site </a> </li>
+                      <li> <a href="#!"> . Fonctionnement du site </a> </li>
                     </ul>
                   </div>
                   <div className="footer-end-social-link col s3">

@@ -43,13 +43,15 @@ class Main extends Component {
               </div>
             </div>
             <div className="univers">
-              <img className="univer-image" src={univers} alt="Votre univers mérite d'être partagé"/>
               <div className="univer-description">
                 <h1 className="univer-description-title"> Votre univers mérite d'être partagé </h1>
                 <div className="univer-description-texte"> Tirez parti d'un logement vacant ou d'une chambre inoccupée. </div>
                 <div className="univer-description-bnt" > 
                   <button className="btn btn-large"> Devenir hôte </button> 
                 </div>
+              </div>
+              <div className="univer-content-image">
+                <img className="univer-image" src={univers} alt="Votre univers mérite d'être partagé"/>
               </div>
             </div>
             <div className="decouverte">
