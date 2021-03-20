@@ -71,7 +71,7 @@ main .logement .logement-items{
 
 /************** style decouverte ****************/
 .decouverte {
-  margin-top: 60px;
+  margin: 60px auto;
 }
 .decouverte .main-content-title{
   margin-bottom: 0;
@@ -105,4 +105,78 @@ main .logement .logement-items{
 }
 .decouverte-item-texte{
   color: #222;
+}
+
+/********************** Footer style *****************/
+footer{
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #F7F7F7;
+  border-top: 1px solid rgb(204, 204, 204);
+}
+footer a{
+  color: #222;
+}
+
+footer a:hover{
+  text-decoration: underline;
+  color: rgb(99, 99, 99);
+  transition: 0.2s;
+}
+
+.footer-widget {
+  padding: 30px 0;
+}
+
+.footer-widget-title{
+  color: #222;
+  font-size: 12px;
+  font-weight: 700;
+}
+.footer1-itms li{
+  margin: 10px auto;
+}
+.footer1-itms li a{
+  font-size: 14px;
+}
+
+.footer-end {
+  padding: 20px 0;
+  border-top: 1px solid rgb(204, 204, 204);
+}
+.footer-end-other ul{
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.footer-end-other ul li{
+  list-style-type: disc!important;
+}
+.footer-end-social-link  a {
+  padding: 0 10px;
+}
+.footer-end-social-link{
+  display: inline-flex;
+}
+.footer-end-social-link  a span{
+  text-decoration: underline;
+}
+.footer-end-social-link  a:hover{
+  text-decoration: none;
+}
+.footer-end-langue, 
+.footer-end-devise{
+  display: inline-flex;
+}
+.footer-end-langue span, 
+.footer-end-devise span{
+  padding: 0 5px;
+}
+.media {
+  display: flex;
+}
+.media a img{
+  width: 20px;
+  height: 20px;
 }
