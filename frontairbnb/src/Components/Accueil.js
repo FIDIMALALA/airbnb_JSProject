@@ -8,6 +8,7 @@ export class Accueil extends Component {
         return (
           <div>
             <Header />
+            <Main />
           </div>
         )
     }
