@@ -33,12 +33,12 @@
             }
             else {
                 $insert_data = [
-                    'NomHote' => $this->post('hostNom'),
-                    'PrenomHote' => $this->post('hostPrenom'),
-                    'DDNHote' => $this->post('hostDDN'),
-                    'EMailHote' => $this->post('hostMail'),
-                    'TelHote' => $this->post('hostTel'),
-                    'PaysHote' => $this->post('hostPays'),
+                    'NomHote' => $this->post('hostNom', TRUE),
+                    'PrenomHote' => $this->post('hostPrenom', TRUE),
+                    'DDNHote' => $this->post('hostDDN', TRUE),
+                    'EMailHote' => $this->post('hostMail', TRUE),
+                    'TelHote' => $this->post('hostTel', TRUE),
+                    'PaysHote' => $this->post('hostPays', TRUE),
                 ];
 
                 $output = $this->host_Model->save($insert_data);
@@ -58,9 +58,4 @@
                 }       
             }
         }
-
-        // host login
-        // public function host_login($hostNam, $hostPWD){
-
-        // }
     }
