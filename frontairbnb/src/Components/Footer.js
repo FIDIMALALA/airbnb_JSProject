@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import facebook from '../Assets/Images/facebook.png';
 import twitter from '../Assets/Images/twitter.jpg';
 import instagram from '../Assets/Images/instagram.png';
+=======
+import {Link} from 'react-router-dom';
+>>>>>>> f807792bdfeb2befd8007d87bc8dde3769e568cb
 
 export class Footer extends Component {
     render() {
