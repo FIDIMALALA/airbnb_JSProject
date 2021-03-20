@@ -59,6 +59,37 @@ class Main extends Component {
                 </div>
               </div>
             </div>
+            <div className="decouverte">
+              <h1 className="main-content-title"> Découvrez le monde </h1>
+              <div className="decouverte-description">
+                Des activités uniques organisées par des experts locaux, en personne ou en ligne.
+              </div>
+              <div className="decouverte-content">
+                <div className="decouverte-content-items row">
+                  <div className="decouverte-item">
+                    <a href="#!">
+                      <img className="decouverte-item-image" src={experianceLing} alt="Expériences en ligne"/>
+                      <div className="decouverte-item-title"> Expériences en ligne </div>
+                      <div className="decouverte-item-texte"> Parcourez le monde sans sortir de chez vous. </div>
+                    </a>
+                  </div>
+                  <div className="decouverte-item">
+                    <a href="#!">
+                      <img className="decouverte-item-image" src={experiance} alt="Expériences"/>
+                      <div className="decouverte-item-title"> Expériences </div>
+                      <div className="decouverte-item-texte"> Prenez part à des activités, où que vous soyez. </div>
+                    </a>
+                  </div>
+                  <div className="decouverte-item">
+                    <a href="#!">
+                      <img className="decouverte-item-image" src={aventure} alt="Aventures"/>
+                      <div className="decouverte-item-title"> Aventures </div>
+                      <div className="decouverte-item-texte"> Partez pour un voyage de plusieurs jours, repas et logement compris. </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
       </main>
       )
