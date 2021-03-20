@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import  Logosvg from './Logosvg';
+import UserMenu from './UserMenu';
 
 class MenuAcceuil extends Component {
 constructor() {
@@ -12,11 +13,11 @@ constructor() {
 listMenu(){
   return(
       <div className="drl-nav-menu-liste">
-      <ul className="drl-nav-listes">
-          <li className="drl-nav-item drl-active"> <div>Hébergements <span></span></div> </li>
-          <li className="drl-nav-item"><div>Expériences <span></span></div> </li>
-          <li className="drl-nav-item"><div><a href="#!">Expériences en ligne </a> <span></span></div> </li>
-      </ul>
+        <ul className="drl-nav-listes">
+            <li className="drl-nav-item drl-active"> <div>Hébergements <span></span></div> </li>
+            <li className="drl-nav-item"><div>Expériences <span></span></div> </li>
+            <li className="drl-nav-item"><div><a href="#!">Expériences en ligne </a> <span></span></div> </li>
+        </ul>
       </div>
     )
   }
@@ -31,7 +32,7 @@ listMenu(){
                 {this.listMenu()}
             </form>
           </div>
-          
+          <UserMenu />
       </div>
     </div>
     )

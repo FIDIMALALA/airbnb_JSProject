@@ -40,8 +40,6 @@ export class Menu extends Component {
                     <span id="text-slogan">C'est possible, grâce aux hôtes</span>
                 </div>
             </div>
-            <p></p>
-            <p></p>
         </header> 
         )
     }

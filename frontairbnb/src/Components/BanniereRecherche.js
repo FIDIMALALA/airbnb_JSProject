@@ -262,7 +262,7 @@ export class BanniereRecherche extends Component {
           <div onClick={this.onClickHandlerAdresse} className={"item-adress drl-herbgmt-liste"+this.state.adresseIsActive}>
             <div>adresse</div>
             <div>
-                <input onClick={this.onClickHandlerAdresse} ref={this.textInput} type="text" placeholder="Où allez-vous ?" value={this.state.adresse} name="adresse" id="adresse" />
+                <input ref={this.textInput} type="text" placeholder="Où allez-vous ?" value={this.state.adresse} name="adresse" id="adresse" />
             </div>
             {this.state.isOpenAdresse &&(
             <div> {this.adresse()} </div>)}
