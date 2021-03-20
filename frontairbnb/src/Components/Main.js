@@ -10,14 +10,7 @@ import experiance from '../Assets/Images/expériences.jpg';
 import aventure from '../Assets/Images/aventures.jpg';
 
 class Main extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-    };
-  }
-
-
+ 
   render() {
       return (
         <main className="drl-container" >
